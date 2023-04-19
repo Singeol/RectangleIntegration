@@ -26,10 +26,13 @@ public class Main {
         Calculator calculator = new Calculator();
         Main integral = new Main();
         // Получение границы нижнего интеграла, верхнего интеграла и количества шагов с клавиатуры
+        System.out.print("Введите нижнюю границу интегрирования: ");
         double bottomEdge = scanner.nextDouble();
+        System.out.print("Введите верхнюю границу интегрирования: ");
         double topEdge = scanner.nextDouble();
+        System.out.print("Введите количество шагов разбиения: ");
         int stepCount = scanner.nextInt();
         // Вывод результата интегрирования на экран
-        System.out.println(integral.rectangleIntegration(calculator, bottomEdge, topEdge, stepCount));
+        System.out.println("Результат интегрирования: " + integral.rectangleIntegration(calculator, bottomEdge, topEdge, stepCount));
     }
 }
